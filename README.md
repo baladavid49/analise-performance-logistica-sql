@@ -1,32 +1,60 @@
-# 📦 Projeto: Análise de Performance Logística (SQL Server)
+# 📦 Projeto: Análise de Desempenho Logístico (SQL Server)
 
-## 🎯 Objetivo
-Simular um cenário corporativo de análise logística com foco em performance operacional, taxa de atraso e lucratividade.
+## 🎯 Contexto de Negócio
 
-## 🏗 Estrutura do Banco
-O banco foi modelado com 3 tabelas:
+Uma empresa de logística deseja avaliar sua performance operacional para identificar:
 
-- Motoristas
-- Regioes
-- Entregas (tabela fato)
+- Taxa de atrasos
+- Eficiência dos motoristas
+- Lucratividade por região
+- Evolução mensal das entregas
 
-Relacionamentos via Foreign Keys garantem integridade referencial.
+O objetivo é gerar indicadores estratégicos para apoiar a tomada de decisão.
 
-## 📊 Principais Análises
+---
 
-- Taxa percentual de atraso
+## 🏗 Modelagem de Dados
+
+O banco foi estruturado em modelo relacional com três tabelas:
+
+- **Motoristas** → Dados dos responsáveis pelas entregas
+- **Regioes** → Informações geográficas
+- **Entregas** → Tabela fato com 3000 registros simulados
+
+Relacionamentos garantidos via Foreign Keys.
+
+---
+
+## 📊 Indicadores Desenvolvidos (KPIs)
+
+- Percentual de entregas atrasadas
 - Tempo médio de entrega
-- Performance por motorista
-- Lucro por região
-- Evolução mensal de entregas
+- Ranking de motoristas por desempenho
+- Lucro total por região
+- Volume mensal de entregas
 
-## 🛠 Tecnologias
+---
+
+## 📈 Principais Insights
+
+- Entregas com maior distância apresentam maior probabilidade de atraso.
+- Algumas regiões possuem custo operacional elevado, reduzindo a margem.
+- Há variação significativa de desempenho entre motoristas.
+
+---
+
+## 🛠 Tecnologias Utilizadas
 
 - SQL Server
 - T-SQL
-- Modelagem Relacional
-- Agregações e KPIs
+- Agregações
+- CTE
+- Views
 
-## 🚀 Resultado
+---
 
-O projeto simula 3000 entregas e gera indicadores estratégicos para tomada de decisão logística.
+## 🚀 Próximos Passos
+
+- Construção de dashboard em Power BI
+- Implementação de índices para otimização
+- Evolução para modelo dimensional (Star Schema)
