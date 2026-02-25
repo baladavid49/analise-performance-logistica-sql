@@ -1,97 +1,135 @@
-# 📦 Projeto: Análise de Desempenho Logístico (SQL Server)
+📦 Projeto: Análise de Desempenho Logístico com SQL
+📌 Sobre o Projeto
 
-## 🎯 Contexto de Negócio
+Este projeto foi desenvolvido para praticar SQL em um cenário simulado de uma empresa de logística.
+O objetivo foi analisar dados operacionais e gerar indicadores que ajudem a entender a eficiência das entregas e a rentabilidade da operação.
 
-Uma empresa de logística deseja avaliar sua performance operacional para identificar:
+Os dados foram simulados com 3000 registros, permitindo trabalhar consultas próximas de um contexto real.
 
-- Taxa de atrasos
-- Eficiência dos motoristas
-- Lucratividade por região
-- Evolução mensal das entregas
+🎯 Problema de Negócio Simulado
 
-O objetivo é gerar indicadores estratégicos para apoiar a tomada de decisão.
+A empresa deseja responder perguntas como:
 
----
+Qual o percentual de entregas realizadas no prazo?
 
-## 🏗 Modelagem de Dados
+Qual o tempo médio de entrega?
 
-O banco foi estruturado em modelo relacional com três tabelas:
+Quais motoristas apresentam melhor desempenho?
 
-- **Motoristas** → Dados dos responsáveis pelas entregas
-- **Regioes** → Informações geográficas
-- **Entregas** → Tabela fato com 3000 registros simulados
+Qual região gera maior lucro?
 
-Relacionamentos garantidos via Foreign Keys.
+Como o volume de entregas evolui ao longo dos meses?
 
----
+A proposta do projeto é transformar dados brutos em informações que apoiem decisões.
 
-## 📊 Indicadores Desenvolvidos (KPIs)
+🏗 Estrutura do Banco de Dados
 
-- Percentual de entregas atrasadas
-- Tempo médio de entrega
-- Ranking de motoristas por desempenho
-- Lucro total por região
-- Volume mensal de entregas
+O banco foi estruturado com três tabelas principais:
 
----
+🔹 Motoristas
 
-## 📈 Principais Insights
+Contém os dados dos motoristas responsáveis pelas entregas.
 
-- Entregas com maior distância apresentam maior probabilidade de atraso.
-- Algumas regiões possuem custo operacional elevado, reduzindo a margem.
-- Há variação significativa de desempenho entre motoristas.
+🔹 Regioes
 
----
+Contém informações das regiões atendidas.
 
-## 🛠 Tecnologias Utilizadas
+🔹 Entregas
 
-- SQL Server
-- T-SQL
-- Agregações
-- CTE
-- Views
+Tabela principal com os registros das entregas realizadas, incluindo:
 
----
+Datas
 
+Distância
 
+Receita
 
+Custo
 
-## 🧱 Modelo Relacional
+Status da entrega
 
-O banco foi estruturado com três entidades principais relacionadas por chaves estrangeiras.
+As tabelas estão relacionadas por chaves estrangeiras, garantindo integridade e consistência dos dados.
 
-![Modelo Relacional](https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/Modelo_Relacional.png.png?raw=true)
+🧱 Modelo Relacional
+
+Representação do modelo de dados utilizado no projeto:
+https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/Modelo_Relacional.png.png?raw=true
 
 
+📊 Indicadores Desenvolvidos
 
-## 📊 KPI – Taxa de Entregas no Prazo
+Foram criadas consultas em SQL para gerar os seguintes indicadores:
 
-Este indicador mede o percentual de entregas realizadas com sucesso.
+📌 Percentual de entregas no prazo
 
-![KPI Entregas no Prazo](https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/kpi_entrega_no_prazo.png.png?raw=true)
+⏳ Tempo médio de entrega
 
-📌 Insight:
-A taxa de entregas no prazo permite avaliar a eficiência operacional e identificar possíveis gargalos logísticos.
+🏆 Ranking de motoristas por desempenho
+
+💰 Lucro total por região
+
+📈 Volume mensal de entregas
+
+As consultas utilizaram:
+
+Funções de agregação (SUM, AVG, COUNT)
+
+GROUP BY
+
+CTE (Common Table Expressions)
+
+Views para organização dos indicadores
+
+📊 KPI – Taxa de Entregas no Prazo
+
+Indicador que mede o percentual de entregas realizadas dentro do prazo.
+https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/kpi_entrega_no_prazo.png?raw=true
 
 
-## ⏳ KPI – Tempo Médio de Entrega
+⏳ KPI – Tempo Médio de Entrega
 
-Mede o tempo médio entre envio e entrega dos pedidos concluídos.
-
-![KPI Tempo Médio](https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/kpi_tempo_medio.png.png?raw=true)
-
-📌 Insight:
-O tempo médio de entrega impacta diretamente a satisfação do cliente e a performance da operação.
+Indicador que mede o tempo médio entre envio e conclusão das entregas.
+https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/kpi_tempo_medio.png.png?raw=true
 
 
+📈 Principais Análises
 
+A partir das consultas realizadas, foi possível observar que:
 
+Entregas com maior distância tendem a apresentar mais atrasos.
 
+Existem diferenças de desempenho entre motoristas.
 
+Algumas regiões possuem custo operacional mais elevado, impactando a margem.
 
-## 🚀 Próximos Passos
+O volume de entregas apresenta variação ao longo dos meses.
 
-- Construção de dashboard em Power BI
-- Implementação de índices para otimização
-- Evolução para modelo dimensional (Star Schema)
+🛠 Tecnologias Utilizadas
 
+SQL Server
+
+T-SQL
+
+Modelagem relacional básica
+
+🎯 Objetivo do Projeto
+
+Este projeto faz parte do meu desenvolvimento na área de Análise de Dados e tem como foco:
+
+Aplicar SQL em um cenário prático
+
+Desenvolver raciocínio analítico
+
+Entender indicadores de desempenho operacional
+
+Praticar modelagem de dados
+
+🚀 Próximos Passos
+
+Construir dashboard em Power BI com os dados tratados
+
+Adicionar novos indicadores
+
+Melhorar a performance das consultas com índices
+
+Evoluir o modelo para formato mais próximo de um modelo dimensional
