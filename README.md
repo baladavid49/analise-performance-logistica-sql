@@ -53,8 +53,45 @@ Relacionamentos garantidos via Foreign Keys.
 
 ---
 
+
+
+
+## 🧱 Modelo Relacional
+
+O banco foi estruturado com três entidades principais relacionadas por chaves estrangeiras.
+
+![Modelo Relacional](https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/Modelo_Relacional.png.png?raw=true)
+
+
+
+## 📊 KPI – Taxa de Entregas no Prazo
+
+Este indicador mede o percentual de entregas realizadas com sucesso.
+
+![KPI Entregas no Prazo](https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/kpi_entrega_no_prazo.png.png?raw=true)
+
+📌 Insight:
+A taxa de entregas no prazo permite avaliar a eficiência operacional e identificar possíveis gargalos logísticos.
+
+
+## ⏳ KPI – Tempo Médio de Entrega
+
+Mede o tempo médio entre envio e entrega dos pedidos concluídos.
+
+![KPI Tempo Médio](https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/kpi_tempo_medio.png.png?raw=true)
+
+📌 Insight:
+O tempo médio de entrega impacta diretamente a satisfação do cliente e a performance da operação.
+
+
+
+
+
+
+
 ## 🚀 Próximos Passos
 
 - Construção de dashboard em Power BI
 - Implementação de índices para otimização
 - Evolução para modelo dimensional (Star Schema)
+
