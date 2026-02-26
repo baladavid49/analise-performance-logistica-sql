@@ -50,11 +50,6 @@ Status da entrega
 
 As tabelas estão relacionadas por chaves estrangeiras, garantindo integridade e consistência dos dados.
 
-🧱 Modelo Relacional
-
-Representação do modelo de dados utilizado no projeto:
-https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/Modelo_Relacional.png.png?raw=true
-
 
 📊 Indicadores Desenvolvidos
 
@@ -76,9 +71,14 @@ Funções de agregação (SUM, AVG, COUNT)
 
 GROUP BY
 
-CTE (Common Table Expressions)
 
 Views para organização dos indicadores
+
+🧱 Modelo Relacional
+
+Representação do modelo de dados utilizado no projeto:
+https://github.com/baladavid49/analise-performance-logistica-sql/blob/main/Modelo_Relacional.png.png?raw=true
+
 
 📊 KPI – Taxa de Entregas no Prazo
 
@@ -133,3 +133,4 @@ Adicionar novos indicadores
 Melhorar a performance das consultas com índices
 
 Evoluir o modelo para formato mais próximo de um modelo dimensional
+
